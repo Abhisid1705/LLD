@@ -10,17 +10,18 @@ Components -Node ,Requests
 Node ->virtual ,physical
 Requests->{
 id:
-ip:
+ip
 user_id:
 }
 physical_node {
 id :
-weight://total virtual nodes
-capacity: ram ..etc
+current_req_num:
+capacity:
 status: 'active' || 'inactive'
 }
 virtual_node {
 id :
-PhysicalNode:
+physical_node_id:
+weight: //as per capacity of pn if more capacity assign more wt
 }
 
